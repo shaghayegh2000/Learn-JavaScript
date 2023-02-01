@@ -1,29 +1,43 @@
-var username = "Amir"
-var Username = "Mary"
-var userName = "Reza"
-// alert(userName);
+// document.querySelector("button").onclick = function(){
+//     alert("clickd!");
+// }
 
-var test1 = "It is a string!";
-var age = 23;
-var bool = false;
-var n = null;
-var space = " ";
+// var btn = document.querySelector("button");
+// btn.onclick = function() {
+//     alert('clicked');
+// }
 
-var sex = "female";
-var email = null;
-var city = " ";
-
-function show() {
-    var name = "shaghayegh";
-    var family = "mohammadi";
-    alert(name +" "+family)
+let myImage = document.querySelector("img");
+let test = document.getElementById("test");
+test.onclick = function(){
+    let mySrc = myImage.getAttribute("src");
+    if(mySrc=="images/sta-je-html.jpg"){
+        myImage.setAttribute("src" , "images/sta-je-css.png");
+    }
+    if(mySrc=="images/sta-je-css.png"){
+        myImage.setAttribute("src" , "images/front.jpg");
+    }
+    if(mySrc=="images/front.jpg"){
+        myImage.setAttribute("src" , "images/sta-je-html.jpg");
+    }
 }
-show();
 
-var infos = ["shaghayegh" , "mohamadi" , 23 , true , null]
-// alert (infos[2]);
-document.write("welcome"+" "+infos[0]);
 
-// or var info = new Array();
+let learn = document.querySelector("h1");
+learn.textContent = "well done!";
+learn.onclick = function tst(){
+     learn.style.color = "green";
+}
 
+var text = "Returning Customer?";
+var text2 = "Click here to login";
+var text3 = " New Customer?";
+var text4 = "Register here";
+var result = text+ "  " +text2.link("https://www.w3schools.com")+" "+text3+ "  " +text4.link("https://www.w3schools.com");
+document.querySelector(".linkk").innerHTML = result;
+document.result.style.padding = "15vw";
+// let text = "I am learning";
+// let text2 = "javascript";
+// let result = text+" " +text2.link('https://www.w3schools.com');
+// document.querySelector("#linkk").innerHTML = result;
 
