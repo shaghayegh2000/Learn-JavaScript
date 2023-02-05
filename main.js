@@ -29,15 +29,16 @@ learn.onclick = function tst(){
      learn.style.color = "green";
 }
 
-var text = "Returning Customer?";
-var text2 = "Click here to login";
-var text3 = " New Customer?";
-var text4 = "Register here";
-var result = text+ "  " +text2.link("https://www.w3schools.com")+" "+text3+ "  " +text4.link("https://www.w3schools.com");
+// var text = "Returning Customer?";
+// var text2 = "Click here to login";
+// var text3 = " New Customer?";
+// var text4 = "Register here";
+// var result = text+ "  " +text2.link("#")+" "+text3+ "  " +text4.link("#");
+// document.querySelector(".linkk").innerHTML = result;
+
+let text = "I am learning";
+let text2 = "javascript";
+let result = text+" " +text2.link('#');
 document.querySelector(".linkk").innerHTML = result;
-document.result.style.padding = "15vw";
-// let text = "I am learning";
-// let text2 = "javascript";
-// let result = text+" " +text2.link('https://www.w3schools.com');
-// document.querySelector("#linkk").innerHTML = result;
+
 
