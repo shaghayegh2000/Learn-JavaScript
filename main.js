@@ -41,4 +41,22 @@
 // let result = text+" " +text2.link('#');
 // document.querySelector(".linkk").innerHTML = result;
 
+// let number = -37.57
+// let number2 = 4.56
+// document.write(Math.abs(number));
+// document.write("<br>")
+// document.write(Math.max(number2,2));
+// document.write("<br>")
+// document.write(Math.round(number));
+// document.write("<br>")
+// document.write(Math.ceil(number));
+// document.write("<br>")
+// document.write(Math.floor(number));
+// document.write("<br>")
+// document.write(Math.pow(number2,2));
+// document.write("<br>")
+// document.write(Math.sqrt(number2,2));
+// document.write("<br>")
+// document.write(Math.round(Math.random()*50));
+
 
