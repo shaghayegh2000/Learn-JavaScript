@@ -59,24 +59,33 @@
 // document.write("<br>")
 // document.write(Math.round(Math.random()*50));
 
-let pcontent = document.querySelectorAll("p");
-pcontent[0].innerHTML = "Hello, This is first paragraph";
+// let pcontent = document.querySelectorAll("p");
+// pcontent[0].innerHTML = "Hello, This is first paragraph";
 
-let links = document.getElementsByTagName("a");
-links[1].textContent = "link changed!"
+// let links = document.getElementsByTagName("a");
+// links[1].textContent = "link changed!"
 
-let title = document.getElementById("title");
-title.style.color = "darkgreen";
-title.style.backgroundColor = "lightgreen";
+// let title = document.getElementById("title");
+// title.style.color = "darkgreen";
+// title.style.backgroundColor = "lightgreen";
 
-let btn = document.createElement("button");
-btn.innerHTML = "click me!";
-document.getElementsByTagName("div")[0].appendChild(btn);
+// let btn = document.createElement("button");
+// btn.innerHTML = "click me!";
+// document.getElementsByTagName("div")[0].appendChild(btn);
 
-let list = document.getElementsByTagName("ul")[0];
-let Item2 = document.getElementById("milk");
-list.removeChild(Item2);
+// let list = document.getElementsByTagName("ul")[0];
+// let Item2 = document.getElementById("milk");
+// list.removeChild(Item2);
 
 
+let image = document.getElementById("img");
+image.addEventListener("mouseover" , func1 );
+image.addEventListener("mouseout" , func2 );
+function func1(){
+    this.style.width = "16%";
+}
+function func2(){
+    this.style.width = "15%";
+}
 
 
