@@ -59,4 +59,8 @@
 // document.write("<br>")
 // document.write(Math.round(Math.random()*50));
 
+let pcontent = document.querySelectorAll("p");
+pcontent[0].innerHTML = "Hello, This is first paragraph";
+
+
 
