@@ -2,11 +2,14 @@
     margin: 1vw;
 }
 p{
-    width: 60%;
+    width: 50%;
 }
 a {
     color: rgb(27, 118, 254);
     text-decoration: none;
     display: inline-block;
-    width: 4vw;
+}
+li {
+    list-style-type: square;
+    margin-left: 0;
 }

@@ -62,5 +62,21 @@
 let pcontent = document.querySelectorAll("p");
 pcontent[0].innerHTML = "Hello, This is first paragraph";
 
+let links = document.getElementsByTagName("a");
+links[1].textContent = "link changed!"
+
+let title = document.getElementById("title");
+title.style.color = "darkgreen";
+title.style.backgroundColor = "lightgreen";
+
+let btn = document.createElement("button");
+btn.innerHTML = "click me!";
+document.getElementsByTagName("div")[0].appendChild(btn);
+
+let list = document.getElementsByTagName("ul")[0];
+let Item2 = document.getElementById("milk");
+list.removeChild(Item2);
+
+
 
 
