@@ -1,55 +1,39 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.massage-container {
-  width: 56%;
-  margin: auto;
-  margin-top: 2vw;
-  background-color: aquamarine;
-  height: 85vh;
-}
-.input-group {
+.input-group{
   position: fixed;
-  bottom: 2vw;
-  right: 42%;
-  transform: translateX(49%);
-  -webkit-transform: translateX(49%);
-  -moz-transform: translateX(49%);
-  -ms-transform: translateX(49%);
-  -o-transform: translateX(49%);
-  width: 70%;
+  bottom: 10px;
+  right: 50%;
+  transform: translateX(50%);
+  width: 90%;
 }
-input {
-  width: 70%;
-  height: 3vw;
-  border-radius: .3vw;
-  -webkit-border-radius: .3vw;
-  -moz-border-radius: .3vw;
-  -ms-border-radius: .3vw;
-  -o-border-radius: .3vw;
+input{
+  width: 90%;
+  height: 45px;
+  border-radius: 5px;
 }
-button {
-  cursor: pointer;
-  height: 3vw;
-  width: 9%;
-  border-radius: .3vw;
-  -webkit-border-radius: .3vw;
-  -moz-border-radius: .3vw;
-  -ms-border-radius: .3vw;
-  -o-border-radius: .3vw;
+button{
+  height: 45px;
+  width: 9.1%;
+  border-radius: 5px;
 }
-li {
-  margin: 2vw 2vw;
-  height: 2vw;
-  border-radius: .2vw;
-  -webkit-border-radius: .2vw;
-  -moz-border-radius: .2vw;
-  -ms-border-radius: .2vw;
-  -o-border-radius: .2vw;
-  background-color: rgb(50, 50, 255);
+.messages-container{
+  width: 90%;
+  margin : auto;
+  margin-top: 10px;
+  background-color: rgb(156, 178, 197);
+  height: 90vh;
+}
+li{
+  margin: 20px 20px;
+  height: 25px;
+  padding: 0px 20px;
+  border-radius: 5px;
+  background-color: #fff;
   list-style-type: none;
   display: inline-block;
-  width: 40%;
+  width: 50%;
 }
