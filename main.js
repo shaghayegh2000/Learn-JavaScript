@@ -133,3 +133,9 @@
 //     document.write(friends[i]+" ");
 // }
 
+
+var friends = ["hikfse" , "wefhio" , "efhiwo"];
+friends.forEach(func);
+function func(x){
+    document.write(x + "<br>");
+}
