@@ -23,6 +23,8 @@
 // }
 
 
+
+
 // let learn = document.querySelector("h1");
 // learn.textContent = "well done!";
 // learn.onclick = function tst(){
@@ -59,6 +61,9 @@
 // document.write("<br>")
 // document.write(Math.round(Math.random()*50));
 
+
+
+
 // let pcontent = document.querySelectorAll("p");
 // pcontent[0].innerHTML = "Hello, This is first paragraph";
 
@@ -78,6 +83,8 @@
 // list.removeChild(Item2);
 
 
+
+
 // let image = document.getElementById("img");
 // image.addEventListener("mouseover" , func1 );
 // image.addEventListener("mouseout" , func2 );
@@ -88,19 +95,35 @@
 //     this.style.width = "15%";
 // }
 
-var movie = {
-    title : "sfhl dkfhdkf",
-    releaseDate : "2015",
-    duration : "2h",
-    actors :[{
-        name : "iodfhesfihs",
-        birth : "94847"
-    },
-    {
-      name : "kfjsesd", 
-      birth : "18947"
-    }
-]}
-document.write(movie.actors[0].birth);
 
+
+// var movie = {
+//     title : "sfhl dkfhdkf",
+//     releaseDate : "2015",
+//     duration : "2h",
+//     actors :[{
+//         name : "iodfhesfihs",
+//         birth : "94847"
+//     },
+//     {
+//       name : "kfjsesd", 
+//       birth : "18947"
+//     }
+// ]}
+// document.write(movie.actors[0].birth);
+
+
+// let pass ="admin1234";
+// let guess;
+// let error = false;
+// let counter = 0;
+// while(guess!=pass && error==false){
+//     if(counter<=5){
+//         guess = prompt("password");
+//         counter++;
+//     }else{
+//         alert("you can login after 2 hours");
+//         error = true;
+//     }
+// }
 
