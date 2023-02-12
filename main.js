@@ -78,14 +78,29 @@
 // list.removeChild(Item2);
 
 
-let image = document.getElementById("img");
-image.addEventListener("mouseover" , func1 );
-image.addEventListener("mouseout" , func2 );
-function func1(){
-    this.style.width = "16%";
-}
-function func2(){
-    this.style.width = "15%";
-}
+// let image = document.getElementById("img");
+// image.addEventListener("mouseover" , func1 );
+// image.addEventListener("mouseout" , func2 );
+// function func1(){
+//     this.style.width = "16%";
+// }
+// function func2(){
+//     this.style.width = "15%";
+// }
+
+var movie = {
+    title : "sfhl dkfhdkf",
+    releaseDate : "2015",
+    duration : "2h",
+    actors :[{
+        name : "iodfhesfihs",
+        birth : "94847"
+    },
+    {
+      name : "kfjsesd", 
+      birth : "18947"
+    }
+]}
+document.write(movie.actors[0].birth);
 
 
