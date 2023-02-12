@@ -127,3 +127,9 @@
 //     }
 // }
 
+
+// var friends = ["Mina" , "Ali" , "Mary"];
+// for(var i=0; i<friends.length; i++){
+//     document.write(friends[i]+" ");
+// }
+
