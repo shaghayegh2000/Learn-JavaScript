@@ -147,3 +147,40 @@
 //     setTimeout(function(){alert("welcome!")},200);
 //     setInterval(function(){alert("done!")},2000)
 // }
+
+
+// let textinput = document.getElementById("textinput");
+// let btn = document.getElementById("test");
+// function storage(){
+//     localStorage.name = textinput.value;
+// }
+// btn.addEventListener("click" , storage);
+// document.write("Hello" + " " + localStorage.name);
+// // or another way
+// function storage() {
+//     localStorage.setItem("name" , textinput.value)
+// }
+// document.write("Hello" + " " + localStorage.getItem("name"));
+
+// debugger;
+// debbuging learning finished
+
+
+// if(confirm("are you female?")){
+//     alert("welcome");
+// }else{
+//     alert("you can not login!");
+// }
+// let prev = document.getElementById("prev");
+// let next = document.getElementById("next");
+// prev.onclick = function () {
+//     window.history.back();
+// }
+// next.onclick = function() {
+//     window.history.next();
+// }
+
+
+
+
+
