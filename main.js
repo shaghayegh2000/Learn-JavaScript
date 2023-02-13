@@ -181,6 +181,21 @@
 // }
 
 
+let title = document.getElementById("title");
+alert(title.parentNode.nodeName);
+let cont = document.getElementById("cont");
+alert(cont.firstChild.innerHTML);
+alert(cont.lastChild.innerHTML);
+alert(cont.childNodes[3].innerHTML);
+document.write(title.firstChild.nodeValue);
+let parag = document.createElement("p");
+let textt = document.createTextNode("I am new!");
+parag.appendChild(textt);
+// document.body.appendChild(parag);
+cont.insertBefore(parag,cont.childNodes[0]);
+cont.childNodes[0].remove();
+cont.replaceChild(parag,cont.childNodes[1]);
+
 
 
 
