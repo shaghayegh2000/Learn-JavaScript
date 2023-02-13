@@ -134,8 +134,16 @@
 // }
 
 
-var friends = ["hikfse" , "wefhio" , "efhiwo"];
-friends.forEach(func);
-function func(x){
-    document.write(x + "<br>");
-}
+// var friends = ["hikfse" , "wefhio" , "efhiwo"];
+// friends.forEach(func);
+// function func(x){
+//     document.write(x + "<br>");
+// }
+
+
+// let test = document.getElementById("test");
+// test.addEventListener("click" , fun);
+// function fun(){
+//     setTimeout(function(){alert("welcome!")},200);
+//     setInterval(function(){alert("done!")},2000)
+// }
