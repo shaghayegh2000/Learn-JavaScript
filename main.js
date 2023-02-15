@@ -181,21 +181,72 @@
 // }
 
 
-let title = document.getElementById("title");
-alert(title.parentNode.nodeName);
-let cont = document.getElementById("cont");
-alert(cont.firstChild.innerHTML);
-alert(cont.lastChild.innerHTML);
-alert(cont.childNodes[3].innerHTML);
-document.write(title.firstChild.nodeValue);
-let parag = document.createElement("p");
-let textt = document.createTextNode("I am new!");
-parag.appendChild(textt);
-// document.body.appendChild(parag);
-cont.insertBefore(parag,cont.childNodes[0]);
-cont.childNodes[0].remove();
-cont.replaceChild(parag,cont.childNodes[1]);
+// let title = document.getElementById("title");
+// alert(title.parentNode.nodeName);
+// let cont = document.getElementById("cont");
+// alert(cont.firstChild.innerHTML);
+// alert(cont.lastChild.innerHTML);
+// alert(cont.childNodes[3].innerHTML);
+// document.write(title.firstChild.nodeValue);
+// let parag = document.createElement("p");
+// let textt = document.createTextNode("I am new!");
+// parag.appendChild(textt);
+// // document.body.appendChild(parag);
+// cont.insertBefore(parag,cont.childNodes[0]);
+// cont.childNodes[0].remove();
+// cont.replaceChild(parag,cont.childNodes[1]);
+
+
+// let a = document.createElement("a");
+// let lin = document.createTextNode("I am link!");
+// a.appendChild(lin);
+// cont.insertBefore(a,cont.childNodes[1]);
+
+
+// var person = "Amir",
+// carName = "Volvo",
+// price = 200;
+// alert(price);
+// price = 300;
+// var x = "hello";
+// var x = "hey";
+// x = "bye";
+// alert(x);
+// let y = 1;
+// let y = 2;
+// y = 2;
+// alert(y);
+
+function alertIt()
+{
+    alert(person);
+}
+alertIt();
+{
+  let x = 2;
+  alert(x);
+}
+let x = 3;
+alert(x);
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+// var text = "Returning Customer?";
+// var text2 = "Click here to login";
+// var text3 = " New Customer?";
+// var text4 = "Register here";
+// var result = text+ "  " +text2.link("https://www.homaygift.com/my-account")+"<br>"+text3+ " " +text4.link("https://www.homaygift.com/my-account/");
+// document.querySelector(".woocommerce-info").innerHTML = result;
