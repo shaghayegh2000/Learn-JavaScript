@@ -217,18 +217,66 @@
 // y = 2;
 // alert(y);
 
-function alertIt()
-{
-    alert(person);
-}
-alertIt();
-{
-  let x = 2;
-  alert(x);
-}
-let x = 3;
-alert(x);
+// function alertIt()
+// {
+//     alert(person);
+// }
+// alertIt();
+// {
+//   let x = 2;
+//   alert(x);
+// }
+// let x = 3;
+// alert(x);
 
+// {
+//     var y = 4;
+//     alert(y)
+// }
+//   alert(y);
+// var x = 10;
+// {
+//     var x = 2;
+// }
+// alert(x);
+  
+  
+// let y = 10;
+// {
+//     let y = 2;
+// }
+// alert(y);
+
+// const PI = 3.141592658888;
+
+// const PI;
+// PI = 3.141592658888;
+
+
+// PI = 3.14;
+// PI = PI+10;
+// PI += 10;
+
+// let x = 2;
+// alert(2*PI);
+
+// const cars  = ["Saab", "Volvo", "BMW"];
+
+// cars[0] = "Toyota";
+
+// alert(cars[0]);
+
+// cars.push("Audi");
+
+// document.write(cars);
+
+// const car = {type: "Fiat", model:"500", color:"white"};
+
+// car.color = "red";
+
+// car.owner = "Amir";
+
+// car = {type: "Audi", model:"1500", color:"red"};
 
 
 
