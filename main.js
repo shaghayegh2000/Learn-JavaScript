@@ -278,25 +278,51 @@
 
 // car = {type: "Audi", model:"1500", color:"red"};
 
-function loadd(){
-    alert("It is loading");
-}
-document.getElementById("textinput").focus();
-function change(){
-    alert("changed");
-}
-function mouseoverit(el){
-    el.innerHTML="clik me!"
-}
-function mouseoutit(el){
-    el.innerHTML="Mouse over me!"
-}
-function moused(el){
-    el.style.backgroundColor = "yellow";
-}
-function mouseup(el){
-    el.style.backgroundColor = "aquamarine";
-}
+// function loadd(){
+//     alert("It is loading");
+// }
+// document.getElementById("textinput").focus();
+// function change(){
+//     alert("changed");
+// }
+// function mouseoverit(el){
+//     el.innerHTML="clik me!"
+// }
+// function mouseoutit(el){
+//     el.innerHTML="Mouse over me!"
+// }
+// function moused(el){
+//     el.style.backgroundColor = "yellow";
+// }
+// function mouseup(el){
+//     el.style.backgroundColor = "aquamarine";
+// }
+
+
+// let text;
+// for(i=0; i<=10; i++)
+// {
+//     if (i===7) {
+//         break;
+//     }
+//     text = "number is " + i + "<br>";
+//     document.write(text);
+// }
+// document.write("<hr>")
+// for(i=0; i<=10; i++)
+// {
+//     if (i===7) {
+//         continue;
+//     }
+//     text = "number is " + i + "<br>";
+//     document.write(text);
+// }
+
+
+// setInterval(() => {
+//     document.getElementsByTagName("h1")[0].innerHTML = new Date(2015,3,25);
+// }, 100);
+
 
 
 
