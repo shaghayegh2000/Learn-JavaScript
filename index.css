@@ -19,3 +19,14 @@ li {
     width: 15%;
     padding-bottom: 3vw;
 } */
+#box1 {
+width: 15vw;
+height: 11vw;
+background-color: aquamarine;
+color: red;
+text-align: center;
+font-size: 2vw;
+line-height: 10vw;
+cursor: pointer;
+margin: 4vw;
+}

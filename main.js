@@ -278,8 +278,25 @@
 
 // car = {type: "Audi", model:"1500", color:"red"};
 
-
-
+function loadd(){
+    alert("It is loading");
+}
+document.getElementById("textinput").focus();
+function change(){
+    alert("changed");
+}
+function mouseoverit(el){
+    el.innerHTML="clik me!"
+}
+function mouseoutit(el){
+    el.innerHTML="Mouse over me!"
+}
+function moused(el){
+    el.style.backgroundColor = "yellow";
+}
+function mouseup(el){
+    el.style.backgroundColor = "aquamarine";
+}
 
 
 
