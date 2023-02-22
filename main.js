@@ -324,6 +324,28 @@
 // }, 100);
 
 
+// let person = {fname:"Shaghayegh" , Lname:"Mohamadi"};
+// let txt = "";
+// for (let x in person) {
+//     txt += person[x];
+// }
+// document.write(txt);
+// document.write("<br>");
+// document.write("<br>");
+// let nums = [10 , 20 , 30 , 40];
+// let tex = "";
+// for (let x in nums) {
+//     tex += nums[x]+" ";
+// }
+// document.write(tex+"<br>");
+// document.write("<br>");
+// document.write("<br>");
+// let text = "";
+// for (let x of nums) {
+//     text += x + " ";
+// }
+// document.write(text+"<br>");
+
 
 
 
