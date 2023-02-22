@@ -8,6 +8,7 @@ var loworhigh = document.querySelector(".loworhigh");
 var guesscount = 1;
 var resetbtn;
 guess.focus();
+
 function check(){
     var userguess = Number(guess.value);
     if(guesscount === 1){
@@ -41,6 +42,7 @@ function check(){
     guess.value = "";
     guess.focus();
 }
+
 submit.addEventListener("click",check);
 function gameEnd() {
     guess.disabled = true;
@@ -51,6 +53,7 @@ function gameEnd() {
     resetbtn.addEventListener("click",resetGame);
     randomN = Math.floor(Math.random()*100)+1;
 }
+
 function resetGame(){
     guesscount = 1;
     var result = document.querySelectorAll(".result p");
