@@ -347,6 +347,43 @@
 // document.write(text+"<br>");
 
 
+let age = 20;
+age<18? alert("you are young"):alert("welcome");
+let myarrey = Array(4).fill("no");
+document.write(myarrey);
+document.write("<br>");
+var dynamic = "name";
+var obj = 
+{
+    key:"value",
+    [dynamic]:"Shaghayegh",
+    lname:"Mohamadi"
+}
+console.log(obj);
+var myArr = [1,2,3,4,5,6,7];
+// myArr.length = 3;
+document.write(myArr);
+document.write("<br>");
+document.write(myArr.slice(-3));
+
+let start = performance.now();
+for(var i=0; i<3000; i++);
+{
+    alert(i);
+}
+let end = performance.now();
+alert(end-start);
+
+
+
+
+
+
+
+
+
+
+
 
 
 
