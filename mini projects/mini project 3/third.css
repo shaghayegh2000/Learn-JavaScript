@@ -20,12 +20,25 @@
     top: 277px;
 }
 .animation {
-    animation: jump 3s linear;
-    -webkit-animation: jump 3s linear;
+    animation: jump .7s linear;
+    -webkit-animation: jump .7s linear;
 }
 @keyframes jump {
-    from {top: 277px;}
-    to {top: -277px;}
+    0%{
+        top: 277px;
+    }
+    30%{
+        top: 200px;
+    }
+    50%{
+        top: 200px;
+    }
+    75%{
+        top: 230px;
+    }
+    100%{
+        top: 277px;
+    }
 }
 #block {
     background-color: black;
@@ -33,6 +46,7 @@
     height: 30px;
     position: relative;
     top: 247px;
+    left: 666px;
     /* animation: block 2s infinite linear;
     -webkit-animation: block 2s infinite linear; */
 }
