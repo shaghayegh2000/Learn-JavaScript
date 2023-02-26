@@ -20,8 +20,8 @@
     top: 277px;
 }
 .animation {
-    animation: jump .7s linear;
-    -webkit-animation: jump .7s linear;
+    animation: jump .5s linear;
+    -webkit-animation: jump .5s linear;
 }
 @keyframes jump {
     0%{
@@ -47,8 +47,8 @@
     position: relative;
     top: 247px;
     left: 666px;
-    /* animation: block 2s infinite linear;
-    -webkit-animation: block 2s infinite linear; */
+    animation: block 2s infinite linear;
+    -webkit-animation: block 2s infinite linear;
 }
 @keyframes block {
     0%{

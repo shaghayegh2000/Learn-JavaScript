@@ -13,7 +13,13 @@ function jump(){
 setInterval(function(){
     let blockleft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
     let chartop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
-    if(blockleft<65 && blockleft>50 && chartop>=179){
-        alert("!Game Over!");
+    if(blockleft<61 && blockleft>0 && chartop>245){
+        block.style.animation = "none";
+        alert("!Game Over! Score : "+ Math.floor(counter/200));
+        counter = 0;
+        block.style.animation = "block 2s infinite linear"
+    }else{
+        counter++;
+        score.innerHTML = Math.floor(counter/200);
     }
 }, 10);
