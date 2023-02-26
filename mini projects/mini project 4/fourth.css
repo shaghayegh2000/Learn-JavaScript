@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body {
+    height: 100%;
+}
+body {
+    background-color: rgb(36, 36, 36);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.clock {
+    line-height: 100px;
+    margin: auto;
+    background-color: rgb(36, 36, 36);
+    height: 100px;
+    padding: 0 6vw;
+    box-shadow: -4px -4px 8px 1px rgb(183, 183, 183);
+}
+.display {
+    font-size: 50px;
+    color: cyan;
+    font-family: 'Orbitorn' , sans-serif;
+}
