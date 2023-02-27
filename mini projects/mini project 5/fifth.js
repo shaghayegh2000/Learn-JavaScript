@@ -33,7 +33,6 @@ function startTime(){
 }
 function minutes(){
     second++;
-    clearInterval(minute);
     tens = "00";
     getseconds.innerHTML = "0" + second;
     if(second<=9){
