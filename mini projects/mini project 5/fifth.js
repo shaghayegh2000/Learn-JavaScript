@@ -5,6 +5,7 @@ var getTens = document.getElementById("tens");
 var btnStart = document.getElementById("btn-start");
 var btnStop = document.getElementById("btn-stop");
 var btnReset = document.getElementById("btn-reset");
+var continu = document.createElement("button");
 var Interval;
 var minute;
 
@@ -14,11 +15,20 @@ btnStart.onclick = function(){
     Interval = setInterval(startTime , 1000);
     minute = setInterval(minutes , 60000);
 }
+if(tens>=60){
+    tens = "00"
+    getTens.innerHTML = "00";
+}
 btnStop.onclick = function(){
     clearInterval(Interval);
+    clearInterval(minute);
+    this.parentNode.appendChild(continu);
+    this.parentNode.replaceChild(continu , btnStop);
+    continu.textContent = "Continue"
 }
 btnReset.onclick = function(){
     clearInterval(Interval);
+    clearInterval(minute);
     tens = "00";
     second = "00";
     getTens.innerHTML = tens;
@@ -38,6 +48,16 @@ function minutes(){
     if(second<=9){
         getseconds.innerHTML = "0" + second;
     }
+}
+continu.onclick = function(){
+    continu.textContent = "Stop";
+    if(tens>=60){
+        tens = "00"
+        getTens.innerHTML = "00";
+    }
+    Interval = setInterval(startTime , 1000);
+    this.parentNode.appendChild(btnStop);
+    this.parentNode.replaceChild(btnStop , continu);
 }
 
 
