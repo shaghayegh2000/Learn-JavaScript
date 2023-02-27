@@ -8,16 +8,14 @@ var btnReset = document.getElementById("btn-reset");
 var continu = document.createElement("button");
 var Interval;
 var minute;
+var mincont;
+var minut;
 
 btnStart.onclick = function(){
     clearInterval(Interval);
     clearInterval(minute);
     Interval = setInterval(startTime , 1000);
     minute = setInterval(minutes , 60000);
-}
-if(tens>=60){
-    tens = "00"
-    getTens.innerHTML = "00";
 }
 btnStop.onclick = function(){
     clearInterval(Interval);
@@ -49,16 +47,40 @@ function minutes(){
         getseconds.innerHTML = "0" + second;
     }
 }
+function minutess(){
+    second++;
+    tens = "00";
+    getseconds.innerHTML = "0" + second;
+    if(second<=9){
+        getseconds.innerHTML = "0" + second;
+    }
+}
+
 continu.onclick = function(){
     continu.textContent = "Stop";
-    if(tens>=60){
-        tens = "00"
-        getTens.innerHTML = "00";
-    }
     Interval = setInterval(startTime , 1000);
+    mincont = setInterval(minutes , 60000-(tens*1000));
+    clearInterval(mincont);
+    minut = setInterval(minutess , 60000+(tens*1000));
     this.parentNode.appendChild(btnStop);
     this.parentNode.replaceChild(btnStop , continu);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
