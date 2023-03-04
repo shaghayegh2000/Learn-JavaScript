@@ -377,15 +377,16 @@
 
 
 var linkk = document.getElementById("linkk");
-class classname {
+class classname1 {
     constructor(name , lname){
         this.name = name;
         this.lname = lname;
     }
-    method1(x , y){
-        alert(x+y);
-    }
+    // method1(x , y){
+    //     alert(x+y);
+    // }
 }
-let person1 = new classname("SHagha" , "Mohamadi");
+let person1 = new classname1("SHagha" , "Mohamadi");
+let person2 = new classname1("mddcfkc , dhcsndk");
 linkk.innerHTML = "I Am" + " " + person1.name + " " + person1.lname;
-person1.method1(10 , 5);
+// person1.method1(10 , 5);
