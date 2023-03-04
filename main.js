@@ -347,56 +347,45 @@
 // document.write(text+"<br>");
 
 
-let age = 20;
-age<18? alert("you are young"):alert("welcome");
-let myarrey = Array(4).fill("no");
-document.write(myarrey);
-document.write("<br>");
-var dynamic = "name";
-var obj = 
-{
-    key:"value",
-    [dynamic]:"Shaghayegh",
-    lname:"Mohamadi"
-}
-console.log(obj);
-var myArr = [1,2,3,4,5,6,7];
+// let age = 20;
+// age<18? alert("you are young"):alert("welcome");
+// let myarrey = Array(4).fill("no");
+// document.write(myarrey);
+// document.write("<br>");
+// var dynamic = "name";
+// var obj = 
+// {
+//     key:"value",
+//     [dynamic]:"Shaghayegh",
+//     lname:"Mohamadi"
+// }
+// console.log(obj);
+// var myArr = [1,2,3,4,5,6,7];
 // myArr.length = 3;
-document.write(myArr);
-document.write("<br>");
-document.write(myArr.slice(-3));
+// document.write(myArr);
+// document.write("<br>");
+// document.write(myArr.slice(-3));
 
-let start = performance.now();
-for(var i=0; i<3000; i++);
-{
-    alert(i);
+// let start = performance.now();
+// for(var i=0; i<3000; i++);
+// {
+//     alert(i);
+// }
+// let end = performance.now();
+// alert(end-start);
+
+
+
+var linkk = document.getElementById("linkk");
+class classname {
+    constructor(name , lname){
+        this.name = name;
+        this.lname = lname;
+    }
+    method1(x , y){
+        alert(x+y);
+    }
 }
-let end = performance.now();
-alert(end-start);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// var text = "Returning Customer?";
-// var text2 = "Click here to login";
-// var text3 = " New Customer?";
-// var text4 = "Register here";
-// var result = text+ "  " +text2.link("https://www.homaygift.com/my-account")+"<br>"+text3+ " " +text4.link("https://www.homaygift.com/my-account/");
-// document.querySelector(".woocommerce-info").innerHTML = result;
+let person1 = new classname("SHagha" , "Mohamadi");
+linkk.innerHTML = "I Am" + " " + person1.name + " " + person1.lname;
+person1.method1(10 , 5);
