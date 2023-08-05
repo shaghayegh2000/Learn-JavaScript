@@ -56,20 +56,66 @@
 // }
 // document.write(myObj.gender + " " + myObj.family);
 
-function eve() {
-    myEl.innerHTML = "you clicked here!"
-}
-var myEl = document.getElementById("h3");
+// function eve() {
+//     myEl.innerHTML = "you clicked here!"
+// }
+// var myEl = document.getElementById("h3");
 
-function chg () {
-    var num = document.getElementById("input").value;
-    var sub = document.getElementById("submit");
-    if (num>18) {
-        alert("welcome");
-    }else {
-        sub.disabled = true;
-        sub.disabled = false;
-    }
-}
+// function chg () {
+//     var num = document.getElementById("input").value;
+//     var sub = document.getElementById("submit");
+//     if (num>18) {
+//         alert("welcome");
+//     }else {
+//         sub.disabled = true;
+//         sub.disabled = false;
+//     }
+// }
 
+// var date = new Date();
+// document.write(date.toTimeString() + "<br>");
+// document.write(date.toDateString() + "<br>");
+// document.write(date.getDay() + "<br>");
+// switch (new Date().getDay()) {
+//     case 0: {
+//         document.write("saturday");
+//     }
+//     case 1: {
+//         document.write("sunday");
+//     }
+//     case 2: {
+//         document.write("monday");
+//     }
+//     case 3: {
+//         document.write("tuesday");
+//     }
+//     case 4: {
+//         document.write("wednesday");
+//     }
+//     case 5: {
+//         document.write("thursday");
+//     }
+//     case 6: {
+//         document.write("friday");
+//     }
+
+// }
+
+// var arr = ["amir", "jjeofe", "23", "ailjdl"];
+// var txt = "";
+// // for (let i = 0; i < arr.length; i++) {
+// //     txt += arr[i] + "<br>";
+// // }
+// // document.write(txt);
+// for (x in arr) {
+//     myEl.innerText += arr[x];
+// }
+
+// try {
+//     alert(x());
+// } catch(err) {
+//     document.write(err.message);
+// }finally {
+//     document.write("<br>" + "call support")
+// }
 
