@@ -119,3 +119,37 @@
 //     document.write("<br>" + "call support")
 // }
 
+// document.querySelector("button").onclick = function () {
+//     document.querySelector("button").innerHTML = "You Clicked";
+// }
+// document.querySelector("button").onmouseleave = function () {
+//     document.querySelector("button").innerHTML = "click here";
+// }
+
+let myBtn = document.getElementById("btn2");
+let myBtn2 = document.getElementById("btn1");
+let myImg = document.querySelector("img");
+myBtn.onclick = function () {
+    let mySrc =  myImg.getAttribute("src");
+    if (mySrc == "imgs/sta-je-html.jpg"){
+        myImg.setAttribute("src" , "imgs/sta-je-css.png");
+    }
+    if (mySrc == "imgs/sta-je-css.png"){
+        myImg.setAttribute("src" , "imgs/front.jpg");
+    }
+    if (mySrc == "imgs/front.jpg"){
+        myImg.setAttribute("src" , "imgs/sta-je-html.jpg");
+    }
+}
+myBtn2.onclick = function () {
+    let mySrc =  myImg.getAttribute("src");
+    if (mySrc == "imgs/sta-je-html.jpg"){
+        myImg.setAttribute("src" , "imgs/front.jpg");
+    }
+    if (mySrc == "imgs/sta-je-css.png"){
+        myImg.setAttribute("src" , "imgs/sta-je-html.jpg");
+    }
+    if (mySrc == "imgs/front.jpg"){
+        myImg.setAttribute("src" , "imgs/sta-je-css.png");
+    }
+}

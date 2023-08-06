@@ -1,0 +1,16 @@
+img {
+    width: 55%;
+    height: 400px;
+    display: block;
+    margin: 50px auto 0 auto;
+}
+#btns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3px;
+}
+button {
+    width: 70px;
+    height: 30px;
+}
