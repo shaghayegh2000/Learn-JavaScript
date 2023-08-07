@@ -170,3 +170,20 @@
 // let ask1 = prompt("enter a number");
 // let ask2 = prompt("enter a number");
 // document.write(Number(ask1) + Number(ask2));
+
+var h1 = document.getElementsByTagName("h1");
+h1[0].style.backgroundColor = "yellow";
+
+var btn = document.createElement("button");
+btn.innerHTML = "Click Me!";
+document.querySelector("div").appendChild(btn);
+
+let list = document.getElementsByTagName("ul")[0];
+let listItem2 = document.getElementsByTagName("li")[1];
+// list.removeChild(listItem2);
+
+let newI = document.createElement("li");
+newI.innerHTML = "new"
+list.replaceChild(newI , listItem2);
+
+
