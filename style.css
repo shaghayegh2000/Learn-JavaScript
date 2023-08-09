@@ -14,7 +14,7 @@ button {
     width: 70px;
     height: 30px;
 } */
-h1 {
+/* h1 {
     text-align: center;
     margin: auto;
     width: 50%;
@@ -37,6 +37,10 @@ p {
     text-align: center;
 }
 a {
-    padding: 20px;
-    
+    padding: 20px;  
+} */
+
+#chrome {
+    width: 300px;
+    height: 300px;
 }
