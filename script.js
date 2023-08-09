@@ -186,9 +186,45 @@
 // newI.innerHTML = "new"
 // list.replaceChild(newI , listItem2);
 
-let chrom = document.getElementById("chrome");
+// let chrom = document.getElementById("chrome");
+// let btn = document.querySelector("button");
+// btn.addEventListener('click', function () {
+//     chrom.style.width = "200px";
+//     chrom.style.height = "200px";
+// })
+
+// let friends = ["dsdg" , "wtety" , "nxvxmz"];
+// for (let i = 0; i < friends.length; i++) {
+//     document.write(friends[i] + "<br>")
+// }
+// friends.forEach( function (x , i) {
+//     document.write( i + " : " + x + "<br>");
+// });
+
+// let btn = document.querySelector("button");
+// btn.addEventListener('click', function(){
+//     setTimeout(() => {
+//         let par = document.createElement("p");
+//         par.innerHTML = "3 seconds";
+//         document.body.appendChild(par);
+//     }, 3000);
+//     // setInterval(() => {
+//     //     let par = document.createElement("p");
+//     //     par.innerHTML = "3 seconds";
+//     //     document.body.appendChild(par);
+//     // }, 3000);
+// })
+
+let input = document.querySelector("input");
 let btn = document.querySelector("button");
-btn.addEventListener('click', function () {
-    chrom.style.width = "200px";
-    chrom.style.height = "200px";
+
+// btn.addEventListener('click', function(){
+//     localStorage.name = input.value;
+//     document.write(localStorage.name);
+// })
+// document.write(localStorage.name);
+
+btn.addEventListener('click', function(){
+    localStorage.setItem("name" , input.value)
 })
+document.write(localStorage.name);
