@@ -215,16 +215,71 @@
 //     // }, 3000);
 // })
 
-let input = document.querySelector("input");
-let btn = document.querySelector("button");
+
+// let input = document.querySelector("input");
+// let btn = document.querySelector("button");
+
+// // btn.addEventListener('click', function(){
+// //     localStorage.name = input.value;
+// //     document.write(localStorage.name);
+// // })
+// // document.write(localStorage.name);
 
 // btn.addEventListener('click', function(){
-//     localStorage.name = input.value;
-//     document.write(localStorage.name);
+//     localStorage.setItem("name" , input.value);
 // })
 // document.write(localStorage.name);
 
-btn.addEventListener('click', function(){
-    localStorage.setItem("name" , input.value)
+// let btn = document.querySelector("button");
+// btn.addEventListener('click', function () {
+//     document.write(window.innerWidth);
+// })
+// window.onresize = function () {
+//     // btn.innerText = window.innerWidth;
+//     btn.innerText = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+// }
+// document.write(screen.width + "<br>");
+// document.write(screen.height + "<br>");
+// document.write(window.location.href + "<br>");
+// document.write(window.location.hostname + "<br>");
+// document.write(window.location.pathname + "<br>");
+// document.write(window.location.protocol + "<br>");
+
+let open = document.getElementById("open");
+let close = document.getElementById("close");
+let assign = document.getElementById("assign");
+
+let newWin;
+
+open.addEventListener('click', function () {
+    newWin = window.open("https://github.com/");
 })
-document.write(localStorage.name);
+close.addEventListener('click', function () {
+    newWin.close();
+})
+
+assign.onclick = function(){
+    window.location.assign("https://github.com/");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
