@@ -245,27 +245,66 @@
 // document.write(window.location.pathname + "<br>");
 // document.write(window.location.protocol + "<br>");
 
-let open = document.getElementById("open");
-let close = document.getElementById("close");
-let assign = document.getElementById("assign");
+// let open = document.getElementById("open");
+// let close = document.getElementById("close");
+// let assign = document.getElementById("assign");
+let pre = document.getElementById("Pre");
+let next = document.getElementById("next");
+// let newWin;
 
-let newWin;
+// open.addEventListener('click', function () {
+//     newWin = window.open("https://github.com/");
+// })
+// close.addEventListener('click', function () {
+//     newWin.close();
+// })
 
-open.addEventListener('click', function () {
-    newWin = window.open("https://github.com/");
-})
-close.addEventListener('click', function () {
-    newWin.close();
-})
+// assign.onclick = function () {
+//     window.location.assign("https://github.com/");
+// }
 
-assign.onclick = function(){
-    window.location.assign("https://github.com/");
-}
+// pre.onclick = function () {
+//     window.history.back;
+// }
+// next.onclick = function () {
+//     window.history.forward;
+// }
 
+// if (navigator.cookieEnabled) {
+//     alert("is set");
+// }else {
+//     alert("dosent set")
+// }
+// // document.write(navigator.appName);
+// if (confirm("Are you +15?")) {
+//     document.write("welcome");
+// }else{
+//     newWin = window.open("https://notfound");
+// }
 
+let bod = document.getElementsByTagName("button")[0];
+let body = document.querySelector("body");
+let title = document.querySelector("title");
+let ul = document.querySelector("ul");
+let li = document.querySelector("li");
 
+document.write(bod.parentNode.nodeName + "<br>");
+document.write(bod.nextSibling + "<br>");
+document.write(bod.previousElementSibling.innerHTML + "<br>");
+document.write(body.lastChild + "<br>");
+document.write(body.firstChild.innerText + "<br>");
+document.write(body.childNodes[9] + "<br>");
+// document.write(body.innerHTML + "<br>");
+document.write(title.firstChild.nodeValue + "<br>");
 
+let para = document.createElement("li");
+let txt = document.createTextNode("Text Node");
+para.appendChild(txt);
 
+ul.insertBefore(para , ul.childNodes[2]);
+ul.removeChild(ul.firstElementChild);
+
+ul.replaceChild(para , ul.childNodes[4]);
 
 
 
