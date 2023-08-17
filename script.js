@@ -248,8 +248,8 @@
 // let open = document.getElementById("open");
 // let close = document.getElementById("close");
 // let assign = document.getElementById("assign");
-let pre = document.getElementById("Pre");
-let next = document.getElementById("next");
+// let pre = document.getElementById("Pre");
+// let next = document.getElementById("next");
 // let newWin;
 
 // open.addEventListener('click', function () {
@@ -282,42 +282,85 @@ let next = document.getElementById("next");
 //     newWin = window.open("https://notfound");
 // }
 
-let bod = document.getElementsByTagName("button")[0];
-let body = document.querySelector("body");
-let title = document.querySelector("title");
-let ul = document.querySelector("ul");
-let li = document.querySelector("li");
+// let bod = document.getElementsByTagName("button")[0];
+// let body = document.querySelector("body");
+// let title = document.querySelector("title");
+// let ul = document.querySelector("ul");
+// let li = document.querySelector("li");
 
-document.write(bod.parentNode.nodeName + "<br>");
-document.write(bod.nextSibling + "<br>");
-document.write(bod.previousElementSibling.innerHTML + "<br>");
-document.write(body.lastChild + "<br>");
-document.write(body.firstChild.innerText + "<br>");
-document.write(body.childNodes[9] + "<br>");
-// document.write(body.innerHTML + "<br>");
-document.write(title.firstChild.nodeValue + "<br>");
+// document.write(bod.parentNode.nodeName + "<br>");
+// document.write(bod.nextSibling + "<br>");
+// document.write(bod.previousElementSibling.innerHTML + "<br>");
+// document.write(body.lastChild + "<br>");
+// document.write(body.firstChild.innerText + "<br>");
+// document.write(body.childNodes[9] + "<br>");
+// // document.write(body.innerHTML + "<br>");
+// document.write(title.firstChild.nodeValue + "<br>");
 
-let para = document.createElement("li");
-let txt = document.createTextNode("Text Node");
-para.appendChild(txt);
+// let para = document.createElement("li");
+// let txt = document.createTextNode("Text Node");
+// para.appendChild(txt);
 
-ul.insertBefore(para , ul.childNodes[2]);
-ul.removeChild(ul.firstElementChild);
+// ul.insertBefore(para , ul.childNodes[2]);
+// ul.removeChild(ul.firstElementChild);
+// ul.replaceChild(para , ul.childNodes[4]);
 
-ul.replaceChild(para , ul.childNodes[4]);
-
-
-
-
-
-
-
+// function myFunc() {
+//     let carName = "volvo";
+//     var Name = "shagha";
+// }
+// alert(Name); //error
 
 
 
+// document.getElementById("name").focus();
+// function changIt(el) {
+//     alert(el.value);
+// }
+
+// function mouseOver(el) {
+//     el.innerHTML = "click me";
+// }
+// function mouseOut(el) {
+//     el.innerHTML = "Mouse over me";
+//     el.style.backgroundColor = "aquamarine";
+// }
+// function clickBox(el) {
+//     el.innerHTML = "clicked";
+// }
+// function dblClick(el) {
+//     el.style.backgroundColor = "yellow";
+// }
+// function mouseOut2(el) {
+//     el.style.backgroundColor = "aquamarine";
+// }
+
+// setInterval(() => {
+//     let time = document.querySelector("p");
+//     // time.innerHTML = new Date().toLocaleDateString();
+//     time.innerHTML = new Date().getFullYear();
+// }, 1000);
 
 
+const person = {fName:"djckc" , lName:"ehwfivx" , age:"26"};
+for (const x in person) {
+    // let tex = "";
+    // tex += person[x];
+    // document.write(tex);
+    document.write(person[x] + " ");
+}
 
+const nums = [10,20,30,40,50];
+let tex = "";
+// for (const x in nums) {
+//     tex += nums[x];
+// }
+// document.write(tex);
+
+for (const y of nums) {
+    tex += y;
+}
+document.write(tex);
 
 
 
