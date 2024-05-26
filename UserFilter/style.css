@@ -58,6 +58,7 @@ body {
         ul {
             max-height: 400px;
             overflow-y: auto;
+            padding-bottom: 50px;
 
             li {
                 display: flex;
