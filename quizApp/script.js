@@ -5,7 +5,7 @@ const quizDatas = [
         b: "C",
         c: "Python",
         d: "JavaScript",
-        correct: "d",
+        correct: "JavaScript",
     },
     {
         question: "Who is the President of US?",
@@ -13,7 +13,7 @@ const quizDatas = [
         b: "Donald Trump",
         c: "Ivan Saldano",
         d: "Mihai Andrei",
-        correct: "b",
+        correct: "Donald Trump",
     },
     {
         question: "What does HTML stand for?",
@@ -21,7 +21,7 @@ const quizDatas = [
         b: "Cascading Style Sheet",
         c: "Jason Object Notation",
         d: "Helicopters Terminals Motorboats Lamborginis",
-        correct: "a",
+        correct: "Hypertext Markup Language",
     },
     {
         question: "What year was JavaScript launched?",
@@ -29,7 +29,7 @@ const quizDatas = [
         b: "1995",
         c: "1994",
         d: "none of the above",
-        correct: "b",
+        correct: "1995",
     },
 ];
 
@@ -39,8 +39,11 @@ const c_text = document.querySelector('#c_text');
 const d_text = document.querySelector('#d_text');
 const question = document.querySelector('#question');
 const submit = document.querySelector('#submit');
+const answer = document.querySelectorAll('.answer');
+const li = document.querySelectorAll('li');
 
 let cuurenQuiz = 0;
+// let mark = 0;
 
 const loadQuiz = () => {
     const currentQuizData = quizDatas[cuurenQuiz];
@@ -49,12 +52,32 @@ const loadQuiz = () => {
     b_text.innerHTML = currentQuizData.b;
     c_text.innerHTML = currentQuizData.c;
     d_text.innerHTML = currentQuizData.d;
+    // console.log(quizDatas[cuurenQuiz].correct)
 
     cuurenQuiz++;
+
+    answer.forEach(answer => {
+        answer.checked = false;
+    });
 }
+
+li.forEach(li => {
+    li.addEventListener('click', () => {
+        if (li.firstElementChild.checked) {
+            if (li.lastElementChild.innerHTML == quizDatas[cuurenQuiz].correct) {
+                console.log("true")
+            } else {
+                console.log('false');
+            }
+            // console.log(typeof li.lastElementChild.innerHTML)
+        }
+    })
+});
 
 loadQuiz();
 
 submit.addEventListener('click', () => {
-    cuurenQuiz < quizDatas.length ? loadQuiz() : alert('done') ;
+
+    cuurenQuiz < quizDatas.length ? loadQuiz() : alert("done");
+
 })
