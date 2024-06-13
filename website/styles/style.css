@@ -121,22 +121,26 @@ html {
     padding: 0 15px;
 }
   
-/* .btn {
+.btn {
     min-width: 10rem;
     border-radius: 100px;
     text-align: center;
     transition: all 0.2s;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
 }
 
 .btn-primary {
     background: var(--accent);
     color: var(--white);
     padding: 0.6rem 1.2rem;
-}
 
-.btn-primary:hover {
-    background: var(--foreground-secondary);
-    color: var(--action-primary);
+    &:hover {
+        background: var(--foreground-secondary);
+        color: var(--action-primary);
+    }
 }
 
 .btn-secondary {
@@ -144,12 +148,12 @@ html {
     color: var(--foreground-secondary);
     padding: 0.6rem 1.2rem;
     border: 3px solid var(--foreground-tertiary);
-}
 
-.btn-secondary:hover {
-    color: var(--accent);
-    border-color: var(--accent);
-} */
+    &:hover {
+        color: var(--accent);
+        border-color: var(--accent);
+    }
+}
 
 
 /*=============== HEADER ===============*/
@@ -264,6 +268,37 @@ nav {
     span {
     color: var(--accent);
   }
+}
+
+
+/*=============== HERO SECTION ===============*/
+.hero {
+    background: var(--background-primary);
+    padding-top: 2rem;
+    padding-bottom: var(--py);
+    text-align: center;
+
+    .h1 {
+        margin-bottom: 1rem;
+        line-height: 1.6;
+    }
+
+    .h3 {
+        color: var(--foreground-secondary);
+        margin-bottom: 2rem;
+    }
+
+    .btn-group {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .right {
+        display: none;
+    }
 }
 
 
