@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Alibaba';
+    src: url('Alibaba-Regular.eot');
+    src: url('Alibaba-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Alibaba-Regular.woff2') format('woff2'),
+        url('Alibaba-Regular.woff') format('woff'),
+        url('Alibaba-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
