@@ -5,7 +5,7 @@
     --black: #0a0b0c;
     --green: #84E199;
     --white: #ffffff;
-    --fontSize: 1.3vw;
+    --fontSize: 1.2vw;
     --lightGray: #0000001a;
 }
 
@@ -13,15 +13,15 @@ header {
     width: 100%;
     height: 70px;
     background: var(--white);
-    justify-content: space-between;
-
+    
     * {
         font-size: var(--fontSize);
+        color: var(--texts);
     }
 
     .header-left {
         width: 25%;
-        margin-left: 30px;
+        margin: 0 30px;
         i {
             padding: 0 10px;
         }
@@ -29,13 +29,60 @@ header {
 
     .header-navbar {
         width: 50%;
-        position: relative;
+
+        .menu-box {
+            position: absolute;
+            background: var(--white);
+            display: flex;
+            flex-direction: column;
+            width: 140px;
+            align-items: center;
+            justify-content: space-around;
+            height: 90px;
+            top: 180%;
+            right: -20px;
+
+            li {
+                padding-bottom: 10px;
+                &:first-child {
+                    border-bottom: 1px solid var(--lightGray);
+                }
+            }
+        }
+
         ul {
             flex-direction: row-reverse;
+            width: 100%;
+            flex-wrap: wrap;
 
-            .header-navbar-item:not(:last-child) {
+            .header-navbar-item{
                 border-left: 1px solid var(--lightGray);
-                padding: 0 15px;
+                padding-left: 15px;
+
+                &:last-child {
+                    border: none;
+                }
+            }
+
+            .more , .parvaz-menu {
+                display: none;
+            }
+        }
+    }
+
+    .header-right {
+        width: 15%;
+
+        * {
+            color: var(--black);
+        }
+
+        .logo {
+            width: 100%;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            p {
+                font-size: .8vw;
             }
         }
     }
