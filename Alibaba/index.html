@@ -103,6 +103,78 @@
         </div>
     </header>
 
+    <!-- ================= banners ================= -->
+    <section class="banner">
+        <div class="banner-imgs">
+            <img src="assets/images/header-pic.jpg" alt="banner">
+        </div>
+        <div class="banner-ticket mx border-radius">
+            <div class="banner-list">
+                <div class="banner-lists">
+                    <ul class="lists flex-row">
+                        <li class="px flex-col">
+                            <i class="fa-solid fa-plane-arrival"></i>
+                            <p>پرواز داخلی</p>
+                        </li>
+                        <li class="px flex-col">
+                            <i class="fa-solid fa-plane-departure"></i>
+                            <p>پرواز خارجی</p>
+                        </li>
+                        <li class="px flex-col">
+                            <i class="fa-solid fa-train-subway"></i>
+                            <p>قطار</p>
+                        </li>
+                        <li class="px flex-col">
+                            <i class="fa-solid fa-bus"></i>
+                            <p>اتوبوس</p>
+                        </li>
+                        <li class="px flex-col">
+                            <i class="fa-solid fa-suitcase-rolling"></i>
+                            <p>تور</p>
+                        </li>
+                        <li class="px flex-col">
+                            <i class="fa-solid fa-hotel"></i>
+                            <p>هتل</p>
+                        </li>
+                        <li class="px flex-col">
+                            <i class="fa-solid fa-house-chimney"></i>
+                            <p>ویلا و اقامتگاه</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ticket">
+                    <div class="choose">
+                        <select name="travel" class="select">
+                            <optgroup>
+                                <option value="oneWay">یک طرفه</option>
+                                <option value="oneWay">رفت و برگشت</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="search">
+                        <div class="city1">
+                            <label for="fcity">مبدا (شهر)</label><br>
+                            <input type="text" id="fcity" name="fcity" placeholder="مبدا (شهر)
+                            ">
+                        </div>
+                        <div class="arrows">
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                        </div>
+                        <div class="city2">
+                            <label for="scity">مقصد (شهر)</label><br>
+                            <input type="text" id="scity" name="scity" placeholder="مقصد (شهر)
+                            ">
+                        </div>
+                        <div class="date1">
+                            <label class="legend ">تاریخ رفت</label><br>
+                            <input type="date" placeholder="تاریخ رفت" class="bt-bottom-input" id="godate-input">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="scripts/script.js"></script>
 </body>
 </html>
