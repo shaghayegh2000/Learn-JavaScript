@@ -55,9 +55,7 @@ html {
   line-height: 1.8;
 
     body {
-        /* :focus {
-        outline-offset: 4px;
-        } */
+        overflow-x: hidden;
         
         /*=============== BASE ===============*/
         img {
@@ -401,6 +399,68 @@ nav {
         }
     }
 }
+
+
+/*=================== ASIDE ===================*/
+.aside {
+    display: none;
+}
+  
+
+/*=============== FOOTER ===============*/
+footer {
+    background: var(--background-primary);
+
+    .container {
+        padding: var(--py) 15px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .wrapper {
+        text-align: center;
+
+        .footer-text {
+            color: var(--foreground-secondary);
+            max-width: 300px;
+            margin: auto;
+        }
+
+        .footer-title {
+            color: var(--foreground-primary);
+            font-weight: 700;
+            margin-bottom: 0.4rem;
+        }
+
+        .footer-link {
+            color: var(--foreground-secondary);
+
+            &:hover {
+                color: var(--accent);
+            }
+        }
+          
+    }
+
+    .copyright {
+        color: var(--foreground-secondary);
+        font-size: var(--fs-4);
+        text-align: center;
+        padding: 1rem;
+        border-top: 1px solid var(--action-primary);
+        
+        a {
+            color: var(--accent);
+            font-weight: 500;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
 
 
 /*=============== scrollbar style ===============*/
