@@ -1,180 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AliBaba</title>
     <link rel="shortcut icon" href="assets/images/logo.png" type="image/png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous">
     <link rel="stylesheet" href="styles/all.css">
     <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
+  </head>
+  <body>
+
     <!-- ================= header ================= -->
-    <header class="flex-row px">
-        <div class="header-left flex-row">
-            <div>
-                <span class="hl-text"> ورود یا ثبت‌نام </span>
-                <i class="fa-regular fa-user"></i>
-            </div>
-            <div>
-                <span class="hl-text"> پیگیری خرید</span>
-                <i class="fa-solid fa-file-invoice"></i>
-            </div>
-        </div>
+    <header class="d-flex flex-wrap align-items-center justify-content-between px-3 py-2 flex-row-reverse shadow-sm">
+        <a href="/" class="px-3">
+          <img src="assets/images/download.svg" alt="alibaba">
+        </a>
 
-        <div class="header-navbar flex-row">
-            <ul class="header-navbar-items flex-row">
-                <li class="header-navbar-item header-navbar-item1 positionRel">
-                    <a href="#" class="header-navbar-link">
-                        <i class="fa-solid fa-chevron-down"></i>
-                        <span>پرواز</span>
-                    </a>
-                    <div class="parvaz-menu">
-                        <ul class="menu-box border">
-                            <li class="menu-item">
-                                <a href="#" class="menu-link">پرواز داخلی</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#" class="menu-link">پرواز خارجی</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
+        <ul class="nav col-5 justify-content-evenly d-none d-lg-flex flex-row-reverse">
+          <li class="d-flex align-items-center"><a href="#" class="nav-link d-flex align-items-center"><i class="fa fa-angle-down me-1"></i> بلیط</a></li>
+          <li class="d-flex align-items-center"><a href="#" class="nav-link d-flex align-items-center"><i class="fa fa-angle-down me-1"></i> اقامت</a></li>
+          <li class="d-flex align-items-center"><a href="#" class="nav-link">تور</a></li>
+          <li class="d-flex align-items-center"><a href="#" class="nav-link">ویزا</a></li>
+          <li class="d-flex align-items-center"><a href="#" class="nav-link d-flex align-items-center"><i class="fa fa-angle-down me-1"></i> بیشتر</a></li>
+        </ul>
 
-                <li class="header-navbar-item">
-                    <a href="#" class="header-navbar-link">
-                        <span>قطار</span>
-                    </a>
-                </li>
-
-                <li class="header-navbar-item">
-                    <a href="#" class="header-navbar-link">
-                        <span>اتوبوس</span>
-                    </a>
-                </li>
-
-                <li class="header-navbar-item">
-                    <a href="#" class="header-navbar-link">
-                        <span>تور</span>
-                    </a>
-                </li>
-
-                <li class="header-navbar-item">
-                    <a href="#" class="header-navbar-link">
-                        <span>هتل</span>
-                    </a>
-                </li>
-
-                <li class="header-navbar-item">
-                    <a href="#" class="header-navbar-link">
-                        <span>ویلا و اقامتگاه</span>
-                    </a>
-                </li>
-
-                <li class="header-navbar-item positionRel header-navbar-item7">
-                    <a href="#" class="header-navbar-link">
-                        <i class="fa-solid fa-chevron-down"></i>
-                        <span>بیشتر</span>
-                    </a>
-                    <div class="more">
-                        <ul class="menu-box border">
-                            <li class="menu-item">
-                                <a href=" #" class="menu-link ">علی بابا پلاس</a>
-                            </li>
-                            <li class="menu-item ">
-                                <a href="#" class="menu-link ">مجله علی‌بابا</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </div>
-
-        <div class="header-right flex-row">
-            <div class="logo flex-row1">
-                <img src="assets/images/logo.png" alt="logo" width="50">
-                <div class="link">
-                    <strong>alibaba.ir</strong>
-                    <p> خرید بلیط، هتل، تور </p>
-                </div>
-            </div>
+        <div class="d-flex flex-row-reverse justify-content-between col-md-6 col-sm-7 gap-3 col-lg-auto">
+          <p class=""><i class="fa-regular fa-circle-question"></i> مرکز پشتیبانی آنلاین</p>
+          <p class="">سفرهای من</p>
+          <p class="">ورود یا ثبت‌نام</p>
         </div>
     </header>
 
-    <!-- ================= banners ================= -->
-    <section class="banner">
-        <div class="banner-imgs">
-            <img src="assets/images/header-pic.jpg" alt="banner">
+    <main>
+      <section class="tickets-part">
+        <div class="banner">
+          <img src="assets/images/پرواز داخلی.jpg" alt="پرواز داخلی" width="100%" height="320">
         </div>
-        <div class="banner-ticket mx border-radius">
-            <div class="banner-list">
-                <div class="banner-lists">
-                    <ul class="lists flex-row">
-                        <li class="px flex-col">
-                            <i class="fa-solid fa-plane-arrival"></i>
-                            <p>پرواز داخلی</p>
-                        </li>
-                        <li class="px flex-col">
-                            <i class="fa-solid fa-plane-departure"></i>
-                            <p>پرواز خارجی</p>
-                        </li>
-                        <li class="px flex-col">
-                            <i class="fa-solid fa-train-subway"></i>
-                            <p>قطار</p>
-                        </li>
-                        <li class="px flex-col">
-                            <i class="fa-solid fa-bus"></i>
-                            <p>اتوبوس</p>
-                        </li>
-                        <li class="px flex-col">
-                            <i class="fa-solid fa-suitcase-rolling"></i>
-                            <p>تور</p>
-                        </li>
-                        <li class="px flex-col">
-                            <i class="fa-solid fa-hotel"></i>
-                            <p>هتل</p>
-                        </li>
-                        <li class="px flex-col">
-                            <i class="fa-solid fa-house-chimney"></i>
-                            <p>ویلا و اقامتگاه</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="ticket">
-                    <div class="choose">
-                        <select name="travel" class="select">
-                            <optgroup>
-                                <option value="oneWay">یک طرفه</option>
-                                <option value="oneWay">رفت و برگشت</option>
-                            </optgroup>
-                        </select>
-                    </div>
-                    <div class="search">
-                        <div class="city1">
-                            <label for="fcity">مبدا (شهر)</label><br>
-                            <input type="text" id="fcity" name="fcity" placeholder="مبدا (شهر)
-                            ">
-                        </div>
-                        <div class="arrows">
-                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                        </div>
-                        <div class="city2">
-                            <label for="scity">مقصد (شهر)</label><br>
-                            <input type="text" id="scity" name="scity" placeholder="مقصد (شهر)
-                            ">
-                        </div>
-                        <div class="date1">
-                            <label class="legend ">تاریخ رفت</label><br>
-                            <input type="date" placeholder="تاریخ رفت" class="bt-bottom-input" id="godate-input">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+      </section>
+    </main>
 
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="scripts/script.js"></script>
-</body>
+  </body>
 </html>

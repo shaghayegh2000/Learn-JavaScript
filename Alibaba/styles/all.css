@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    margin: 0 !important;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
@@ -35,59 +35,26 @@
 
 body {
     font-family: "Alibaba-Regular", Helvetica, sans-serif;
-    background-color: #F6F6F6;
     overflow-x: hidden;
     position: relative;
+    font-size: 1rem;
 }
 
-.flex-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-    /* flex-wrap: wrap; */
+::-webkit-scrollbar {
+    width: .5rem;
 }
+  
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #d4d4d4; 
 
-.flex-row1 {
-    display: flex;
-    align-items: center;
 }
-
-.flex-col {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.px {
-    padding: 0 40px;
-}
-.mx {
-    margin: 0 40px;
-}
-
-.positionRel {
-    position: relative;
-}
-
-.border {
-    border: 1px solid #0000001a;
+   
+::-webkit-scrollbar-thumb {
+    background: var(--lightGray); 
     border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
 }
-
-.border-radius {
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-
-.display {
-    display: block !important;
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #dbdbdb; 
+    box-shadow: inset 0 0 5px grey; 
 }

@@ -1,17 +1,32 @@
-const parvazMenu = document.querySelector('.parvaz-menu'),
-    moreBtn = document.querySelector('.more'),
-    moreList = document.querySelector('.header-navbar-item7'),
-    menuBox = document.querySelector('.header-navbar-item1'),
-    html = document.querySelector('html');
+// $(".dropdownMenu").click(function (e) {
+//     e.preventDefault()
+//     let index = $(this).index();
+//     let currentLi = $('.dropdownMenu').eq(index);
+//     $(this).find('.drop').slideToggle(300);
+//     let currentDrop = $(`.dropdownMenu:eq(${index - 1}) .drop`);
+//     currentDrop.slideUp(300);
+// });
 
-moreList.addEventListener('click', (e) => {
-    e.preventDefault();
-    moreBtn.classList.toggle('display');
-    parvazMenu.classList.remove('display');
-})
+// $('main').click(function (e) {
+//     e.preventDefault();
+//     $('.drop').slideUp(300);
+// });
 
-menuBox.addEventListener('click', (e) => {
-    e.preventDefault();
-    parvazMenu.classList.toggle('display');
-    moreBtn.classList.remove('display');
-})
+
+// const lists = document.querySelectorAll('.list');
+// const line = document.querySelector('.line');
+// const banner = document.querySelector('.banner');
+
+// lists.forEach(list => {
+//     list.addEventListener('click', () => {
+//         const imgText = list.lastElementChild.textContent;
+//         banner.firstElementChild.src = `../assets/images/${imgText}.jpg`;
+//         if (imgText == "پرواز خارجی") {
+//             banner.firstElementChild.src = `../assets/images/${imgText}.png`;
+//         }
+//         banner.firstElementChild.alt = `${imgText}`;
+//         console.log(list.offsetWidth)
+//     })
+// });
+
+
